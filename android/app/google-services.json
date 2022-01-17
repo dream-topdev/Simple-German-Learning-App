@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "945103979498",
+    "project_id": "reactnativets-codingtest",
+    "storage_bucket": "reactnativets-codingtest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945103979498:android:51866bce5afba8d7622893",
+        "android_client_info": {
+          "package_name": "com.lightreactnative"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "945103979498-dft1vp60mbm4fct4tdtqje6b147jsqgg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lightreactnative",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "945103979498-uqvlov7q5pk1r69bprjitkj4vod6rtsl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtlWA37yaN7Qx3XDGpC94kvhqu54aRTLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "945103979498-uqvlov7q5pk1r69bprjitkj4vod6rtsl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
