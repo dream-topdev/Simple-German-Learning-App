@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./showcase/prime-react-native.jpg" width="750">
+  <img src="./showcase/prime-react-native.png" width="750">
 </p>
 
 This is the requirement for react native / typescript Test. [click here](https://docs.google.com/document/d/1DQKEIMsGhvBsWmZOVvWF2_2Zan5wpfH93F-X1oX7qcc/edit?usp=sharing)
@@ -39,10 +39,6 @@ npx pod-install
 ```
 
 # 🌼 Onboarding Screens
-
-<img src="./showcase/1.png" width="750">
-
-<img src="./showcase/2.png" width="750">
 
 **Tech**
 
