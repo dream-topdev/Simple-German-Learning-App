@@ -2,6 +2,8 @@
   <img src="./showcase/prime-react-native.jpg" width="750">
 </p>
 
+This is the requirement for react native / typescript Test. [click here](https://docs.google.com/document/d/1DQKEIMsGhvBsWmZOVvWF2_2Zan5wpfH93F-X1oX7qcc/edit?usp=sharing)
+
 The ultimate collection of production-ready, flexible and accessible React Native Boilerplate 🔥
 
 - 📱 **React Native** — version **0.64.0**
