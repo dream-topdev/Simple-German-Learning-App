@@ -6,7 +6,7 @@ export interface DeEnPair {
   gap: boolean;
 }
 export interface ProblemModel {
-  id: number;
+  id: string;
   example: string;
   problem: DeEnPair[];
   suggest: string[];
