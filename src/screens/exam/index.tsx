@@ -77,10 +77,6 @@ export const ExamScreen: React.FC<ExamProps> = props => {
         }
         else {
           setFinished(true);
-          Alert.alert(
-            "Thanks",
-            "You have finished the test."
-          );
         }
         return;
       }
@@ -182,7 +178,13 @@ export const ExamScreen: React.FC<ExamProps> = props => {
           />
       );
     const suggestList = currProblem.suggest.map((item: string) => (      
-      <SuggestText key={item} text={item} onPress={() => onPressSuggest(item)}/>
+      <SuggestText
+        key={item}
+        text={item}
+        selected={gapInfor.text == item}
+        disabled={gapInfor.state != GapState.NONE}
+        onPress={() => onPressSuggest(item)}
+      />
     ))
     return (      
       <View
@@ -311,6 +313,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   },   
   button: {
+    width: 200,
     borderWidth: 0,
     borderRadius: 25,
     backgroundColor: Colors.button,
@@ -319,6 +322,7 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
   },
   buttonText: {
-    color: 'white'
+    color: 'white',
+    textAlign: 'center'
   }
 });

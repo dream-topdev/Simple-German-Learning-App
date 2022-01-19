@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Text, TouchableOpacity, Image } from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 import {
   Colors
 } from '../consts';
@@ -24,18 +25,21 @@ export const ActionPad = ({
   answer,
   onPress,
 }: ActionPadProps) => {
-  let padStyle = {
-    ...styles.container,    
-    ...(state == ActionPadState.NONE || state == ActionPadState.READY? styles.containerNone:{}),
-    ...(state == ActionPadState.CORRECT ? styles.containerCorrect:{}),
-    ...(state == ActionPadState.WRONG ? styles.containerWrong:{}),
-  };
-  let buttonStyle = {
-    ...styles.button,    
-    ...(state == ActionPadState.NONE ? styles.buttonNone:{}),
-    ...(state == ActionPadState.READY ? styles.buttonReady:{}),
-    ...(state == ActionPadState.CORRECT || state == ActionPadState.WRONG ? styles.buttonResult:{}),
-  };
+  let containerColors : string[] =  ['transparent', 'transparent'];
+  if (state == ActionPadState.NONE || state == ActionPadState.READY)
+    containerColors = ['transparent', 'transparent'];
+  else if (state == ActionPadState.CORRECT)
+    containerColors = ['#08DAE8', '#45E9E8'];
+  else if (state == ActionPadState.WRONG)
+    containerColors = ['#F97789', '#FF938E'];
+  
+  let buttonColors : string[] =  ['transparent', 'transparent'];
+  if (state == ActionPadState.NONE)
+    buttonColors = ['transparent', 'transparent'];
+  else if (state == ActionPadState.READY)
+    buttonColors = ['#08DAE8', '#45E9E8'];
+  else
+    buttonColors = ['#FFFFFE', '#FFFFFD'];
   let buttonTextStyle = {
     ...styles.buttonText,
     ...(state == ActionPadState.NONE ? styles.buttonTextNone:{}),
@@ -45,21 +49,22 @@ export const ActionPad = ({
   };
 
   return (
-    <View style={padStyle}>
+    <LinearGradient colors={containerColors} style={styles.container}>
       <View style={styles.descContainer}>
         {state == ActionPadState.CORRECT && <Text style={styles.descText}>Greate Job!</Text>}
         {state == ActionPadState.WRONG && <Text style={styles.descText}>Answer: <Text style={styles.answerText}>{answer}</Text></Text>}
         {(state == ActionPadState.CORRECT || state == ActionPadState.WRONG) && <Image source={require("../assets/flag.png")}/>}
       </View>
       <TouchableOpacity
-        style={buttonStyle}
         onPress={() => onPress()}
       >
-        <Text style={buttonTextStyle}>
-          {label}
-        </Text>
+        <LinearGradient colors={buttonColors} style={styles.button}>
+          <Text style={buttonTextStyle}>
+            {label}
+          </Text>
+        </LinearGradient>
       </TouchableOpacity>
-    </View>
+    </LinearGradient>
   );
 };
 
@@ -68,7 +73,7 @@ const styles = StyleSheet.create({
     height: 200,
     paddingHorizontal: 30,
     borderTopLeftRadius: 25,
-    borderTopEndRadius: 25,
+    borderTopRightRadius: 25,
   },
   descContainer: {
     marginVertical: 20,
@@ -79,11 +84,11 @@ const styles = StyleSheet.create({
   },
   descText: {
     color: 'white',
-    fontSize: 16,
+    fontSize: 19,
     fontWeight: '700'
   },
   answerText: {
-    fontSize: 15,
+    fontSize: 18,
     fontWeight: 'normal'
   },
   containerNone: {
