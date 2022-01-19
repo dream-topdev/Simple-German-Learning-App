@@ -1,10 +1,13 @@
 <p align="center">
   <img src="./showcase/prime-react-native.png" width="750">
 </p>
-
 This is the requirement for react native / typescript Test. [click here](https://docs.google.com/document/d/1DQKEIMsGhvBsWmZOVvWF2_2Zan5wpfH93F-X1oX7qcc/edit?usp=sharing)
 
-The ultimate collection of production-ready, flexible and accessible React Native Boilerplate 🔥
+
+<p align="center">
+  <img src="./showcase/firebase-data-example.png" width="750">
+</p>
+This is an example data stored on google firebase.
 
 - 📱 **React Native** — version **0.64.0**
 - 🎉 **TypeScript** - Type checking
@@ -15,16 +18,6 @@ The ultimate collection of production-ready, flexible and accessible React Nativ
 - ⚙️ **RN Dotenv** Environment variable with RN env
 
 ## 🚀 Getting started
-
-The best way to start with the template is to [click here](https://github.com/joeygoksu/LightReactNative/generate).
-
-Run the `setup.sh` inside the project folder:
-
-1. `bash ./setup`
-2. Answer to `What is the name of the new project ❓`
-3. Wait until the see success message
-
-_Almost ready_, we're a few steps away
 
 Install node dependencies
 
@@ -80,13 +73,8 @@ npx pod-install
 - react-native-safe-area-context
 - react-native-svg
 - react-native-clean-project
-
-## 🤝 Contributing
-
-1. Fork this repository;
-2. Create your branch: `git checkout -b my-new-feature`;
-3. Commit your changes: `git commit -m 'Add some feature'`;
-4. Push to the branch: `git push origin my-new-feature`.
+- react-native-linear-gradient
+- react-native-firebase
 
 ## 📝 License
 
