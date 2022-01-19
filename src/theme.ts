@@ -7,7 +7,7 @@ export const Theme = {
   Shadow: {
     shadowColor: '#000',
     shadowOffset: {
-      width: 0,
+      width: 5,
       height: 5,
     },
     shadowOpacity: 0.36,
