@@ -6,21 +6,39 @@ import {
 
 interface SuggestTextProps {
   text: string,
+  selected: boolean,
+  disabled: boolean,
   onPress: Function,
 }
 
 export const SuggestText = ({
   text,
+  selected,
+  disabled,
   onPress
 }: SuggestTextProps) => {
+  let containerStyle = {};
+  if (selected)
+    containerStyle = {
+      ...styles.container,
+      backgroundColor: '#6392A6'
+    };
+  else if (disabled)
+    containerStyle = {
+      ...styles.container,
+      backgroundColor: '#9FB5C0'
+    }
+  else
+    containerStyle = styles.container;
 
   return (
     <TouchableOpacity
-      style={styles.container}
+      style={containerStyle}
+      disabled={disabled}
       onPress={() => onPress()}
     >
       <Text
-        style={styles.gapText}
+        style={[styles.gapText, {color: selected ? 'transparent':Colors.primary}]}
       >
         {text}
       </Text>
@@ -29,6 +47,8 @@ export const SuggestText = ({
 };
 SuggestText.defaultProps = {
   text: "",
+  selected: false,
+  disabled: false,
   onPress: () => {}
 }
 const styles = StyleSheet.create({
