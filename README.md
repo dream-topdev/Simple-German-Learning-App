@@ -1,6 +1,8 @@
 <p align="center">
-  <img src="./showcase/prime-react-native.jpg" width="750">
+  <img src="./showcase/prime-react-native.png" width="750">
 </p>
+
+This is the requirement for react native / typescript Test. [click here](https://docs.google.com/document/d/1DQKEIMsGhvBsWmZOVvWF2_2Zan5wpfH93F-X1oX7qcc/edit?usp=sharing)
 
 The ultimate collection of production-ready, flexible and accessible React Native Boilerplate 🔥
 
@@ -37,10 +39,6 @@ npx pod-install
 ```
 
 # 🌼 Onboarding Screens
-
-<img src="./showcase/1.png" width="750">
-
-<img src="./showcase/2.png" width="750">
 
 **Tech**
 
@@ -93,25 +91,3 @@ npx pod-install
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for more information.
-
----
-
-## 🌸 Built with template
-
-- [Vocabulary Builder App](https://github.com/joeygoksu/VocabularyBuilderApp)
-- [Animal Finder Game](https://github.com/joeygoksu/AnimalFinderGame)
-
----
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-
-<table>
-  <tr>
-    <td align="center"><a href="https://joeygoksu.com"><img src="https://avatars.githubusercontent.com/u/6523823?v=3?s=100" width="100px;" alt=""/><br /><sub><b>Joey Goksu</b></sub></a><br />
-    <a href="https://joeygoksu.com/aboutme" title="About me">📖</a>
-    </td>
-</table>
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-Made with ♥ by <a href="https://joeygoksu.com/">Joey Göksu</a>

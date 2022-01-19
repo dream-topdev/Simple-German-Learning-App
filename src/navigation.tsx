@@ -12,6 +12,7 @@ import {
   HomeScreen,
   AboutScreen,
   GetStartedScreen,
+  ExamScreen,
 } from './screens';
 import { iSuperOnboard } from './store/reducers';
 
@@ -38,6 +39,7 @@ const Navigation = () => {
 
   const MainNavigator = () => (
     <Navigator headerMode="none">
+      <Screen name="Exam" component={ExamScreen} />
       <Screen name="Home" component={HomeScreen} />
       <Screen name="About" component={AboutScreen} />
     </Navigator>
