@@ -77,10 +77,6 @@ export const ExamScreen: React.FC<ExamProps> = props => {
         }
         else {
           setFinished(true);
-          Alert.alert(
-            "Thanks",
-            "You have finished the test."
-          );
         }
         return;
       }
@@ -182,7 +178,13 @@ export const ExamScreen: React.FC<ExamProps> = props => {
           />
       );
     const suggestList = currProblem.suggest.map((item: string) => (      
-      <SuggestText key={item} text={item} onPress={() => onPressSuggest(item)}/>
+      <SuggestText
+        key={item}
+        text={item}
+        selected={gapInfor.text == item}
+        disabled={gapInfor.state != GapState.NONE}
+        onPress={() => onPressSuggest(item)}
+      />
     ))
     return (      
       <View
