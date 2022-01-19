@@ -313,6 +313,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   },   
   button: {
+    width: 200,
     borderWidth: 0,
     borderRadius: 25,
     backgroundColor: Colors.button,
@@ -321,6 +322,7 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
   },
   buttonText: {
-    color: 'white'
+    color: 'white',
+    textAlign: 'center'
   }
 });
