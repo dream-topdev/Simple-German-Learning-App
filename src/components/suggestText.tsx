@@ -15,7 +15,10 @@ export const SuggestText = ({
 }: SuggestTextProps) => {
 
   return (
-    <TouchableOpacity style={styles.container}>
+    <TouchableOpacity
+      style={styles.container}
+      onPress={() => onPress()}
+    >
       <Text
         style={styles.gapText}
       >
