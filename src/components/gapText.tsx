@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 import {
   Colors
 } from '../consts';
@@ -28,20 +29,22 @@ export const GapText = ({
   }
   if (text == "")
     return <Gap/>
-  let gapStyle = {
-    ...styles.container,    
-    ...(state == GapState.NONE ? styles.containerNone:{}),
-    ...(state == GapState.CORRECT ? styles.containerCorrect:{}),
-    ...(state == GapState.WRONG ? styles.containerWrong:{}),
-  };
+  let gapColors : string[] =  ['transparent', 'transparent'];
+  if (state == GapState.NONE)
+    gapColors = ['#fff', '#fff'];
+  else if (state == GapState.CORRECT)
+    gapColors = ['#08DAE8', '#45E9E8'];
+  else if (state == GapState.WRONG)
+    gapColors = ['#F97789', '#FF938E'];
+  
   return (
-    <View style={gapStyle}>
+    <LinearGradient colors={gapColors} style={styles.container}>
       <Text
         style={state != GapState.NONE ? styles.gapTextNormal : styles.gapText}
       >
         {text}
       </Text>
-    </View>
+    </LinearGradient>
   );
 };
 
