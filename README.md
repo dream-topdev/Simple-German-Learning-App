@@ -1,7 +1,7 @@
 <p align="center">
   <img src="./showcase/prime-react-native.png" width="750">
 </p>
-This is the requirement for react native / typescript Test. [click here](https://docs.google.com/document/d/1DQKEIMsGhvBsWmZOVvWF2_2Zan5wpfH93F-X1oX7qcc/edit?usp=sharing)
+This is the requirement for react native / typescript Test. [click here] (https://docs.google.com/document/d/1DQKEIMsGhvBsWmZOVvWF2_2Zan5wpfH93F-X1oX7qcc/edit?usp=sharing)
 
 
 <p align="center">
